@@ -24,4 +24,9 @@
             @content;
         }
     }
+    @else if $canvas==XXL {
+        @media screen and (max-width: $XXL) {
+            @content;
+        }
+    }
 }
