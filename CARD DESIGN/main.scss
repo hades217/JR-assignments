@@ -1,0 +1,86 @@
+@import "./_mixin.scss";
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-rooms {
+    height: 975px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(209, 209, 209);
+    &__info {
+        height: 50%;
+        width: 35%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__picture {
+            height: 90%;
+            width: 100%;
+            border-radius: 5px;
+            background-image: url("./img/background.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        &__details {
+            height: 40%;
+            width: 90%;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 5%;
+            border-radius: 5px;
+            &__words {
+                height: 100%;
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                &__ratings {
+                    height: 10%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    padding-top: 5%;
+                    padding: 5%;
+                    &__stars {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        height: 100%;
+                        width: 50%;
+                        img {
+                            height: 100%;
+                            width: 15%;
+                            padding: 2%;
+                        }
+                    }
+                    &__reviews {
+                        height: 100%;
+                        width: 50%;
+                        p {
+                            height: 100%;
+                            width: 100%;
+                            margin: 0px;
+                            font-size: 70%;
+                            color: rgb(92, 92, 92);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include MQ(S) {
+        .container-rooms__info {
+            height: 30%;
+            width: 50%;
+        }
+    }
+}
