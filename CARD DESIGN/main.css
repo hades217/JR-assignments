@@ -103,16 +103,27 @@ body {
   width: 20%;
   position: absolute;
   right: 5%;
-  top: 75%;
+  top: 65%;
 }
 .container-rooms__info__details__button img {
   height: 20%;
   width: 100%;
 }
+.container-rooms__info__like {
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+.container-rooms__info__like img {
+  height: 100%;
+  width: 100%;
+}
 @media screen and (max-width: 425px) {
   .container-rooms .container-rooms__info {
     height: 50%;
-    width: 50%;
+    width: 60%;
   }
 }
 
