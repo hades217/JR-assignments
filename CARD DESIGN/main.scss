@@ -12,14 +12,14 @@ body {
     align-items: center;
     background-color: rgb(209, 209, 209);
     &__info {
-        height: 50%;
+        height: 70%;
         width: 35%;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         &__picture {
-            height: 90%;
+            height: 60%;
             width: 100%;
             border-radius: 5px;
             background-image: url("./img/background.jpg");
@@ -27,18 +27,21 @@ body {
             background-size: cover;
         }
         &__details {
-            height: 40%;
+            height: 25%;
             width: 90%;
             background-color: white;
             position: absolute;
-            bottom: 0;
-            left: 5%;
+            display: flex;
+            flex-direction: row;
+            bottom: 17%;
             border-radius: 5px;
             &__words {
                 height: 100%;
                 width: 80%;
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
+                padding-left: 5%;
                 &__ratings {
                     height: 10%;
                     width: 100%;
@@ -46,7 +49,6 @@ body {
                     flex-direction: row;
                     justify-content: start;
                     padding-top: 5%;
-                    padding: 5%;
                     &__stars {
                         display: flex;
                         flex-direction: row;
@@ -66,20 +68,44 @@ body {
                             height: 100%;
                             width: 100%;
                             margin: 0px;
-                            font-size: 70%;
-                            color: rgb(92, 92, 92);
+                            font-size: 60%;
+                            color: rgb(170, 170, 170);
                             display: flex;
-                            justify-content: center;
+                            justify-content: start;
                             align-items: center;
                         }
                     }
+                }
+                &__hotel h1 {
+                    padding-top: 10%;
+                    margin: 0;
+                    font-size: 110%;
+                }
+                &__location p {
+                    margin: 0;
+                    color: rgb(170, 170, 170);
+                    font-size: 80%;
+                }
+                &__price p {
+                    font-weight: bold;
+                }
+            }
+            &__button {
+                height: 100%;
+                width: 20%;
+                position: absolute;
+                right: 5%;
+                top: 75%;
+                img {
+                    height: 20%;
+                    width: 100%;
                 }
             }
         }
     }
     @include MQ(S) {
         .container-rooms__info {
-            height: 30%;
+            height: 50%;
             width: 50%;
         }
     }
