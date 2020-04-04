@@ -4,6 +4,11 @@
 
 @import "./_variable.scss";
 @mixin MQ($canvas) {
+    @if $canvas==XS {
+        @media screen and (max-width: $XS) {
+            @content;
+        }
+    }
     @if $canvas==S {
         @media screen and (max-width: $S) {
             @content;
