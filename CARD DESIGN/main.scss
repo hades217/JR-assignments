@@ -38,6 +38,10 @@ body {
                 bottom: 17%;
                 border-radius: 5px;
                 transition: 0.4s ease;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
                 &__words {
                     height: 100%;
                     width: 80%;
@@ -128,9 +132,20 @@ body {
                 top: 22%;
                 right: 5%;
                 cursor: pointer;
-                img {
+                #noLike {
                     height: 100%;
                     width: 100%;
+                    transition: all 0.4s ease-in;
+                    display: block;
+                }
+                #yesLike {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: auto;
+                    width: auto;
+                    visibility: hidden;
+                    transition: all 0.4s ease-in;
                 }
             }
         }
